@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0077b6;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+.pricing-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 1000px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 10px #00b4d8;
+}
+.pricing-panel div{
+    max-width: 300px;
+    padding: 10px 40px;
+    text-align: center;
+    
+}
+.pricing-panel div img{
+    max-width: 250px;
+}
+
+div{
+    border-right: none;
+    border-bottom: 2px solid hsl(60, 12%, 68%,.3);
+}
+div:last-child{
+    border-bottom: none;
+}
+div h2{
+    color: #6d6875;
+    font-size: medium;
+    letter-spacing: 5px;
+    max-width: 250px;
+}
+div h3{
+    border-top: 1px solid #8ecae6;
+    border-bottom: 1px solid #8ecae6;
+    max-width: 250px;
+    line-height: 25px;
+    font-size: small;
+    color: #4361ee;
+    font-weight: bolder;
+}
+.h3-btmboderless{
+    border-bottom: none;
+}
+div h1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #4361ee;
+}
+div button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #4361ee;
+    font-size: medium;
+    font-weight: bolder;
+    /* border: 1px solid #0077b6; */
+    box-shadow: 2px 2px 10px #219ebc;
+}
+div button:hover , div button:focus{
+    background-color: #219ebc;
+    color: #ffffff;
+    transition: color 2s ease-in-out ,background-color 2s  ease-in-out;
+    
+}
+
+@media (min-width : 767px) {
+    .pricing-panel{
+        flex-direction: row;
+        
+    }
+    main{
+        height: 100vh;
+    }
+    div{
+        border-right: 2px solid hsl(60, 12%, 68%,.3);
+        border-bottom: none;
+    }
+    div:last-child{
+        border-right: none;
+    }
+    
+}
